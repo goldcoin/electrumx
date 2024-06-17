@@ -2178,6 +2178,28 @@ class Chips(Coin):
     RPC_PORT = 57776
     REORG_LIMIT = 800
 
+class Goldcoin(Coin):
+    NAME = "Goldcoin"
+    SHORTNAME = "GLC"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488B21E")
+    XPRV_VERBYTES = bytes.fromhex("0488ADE4")
+    P2PKH_VERBYTE = bytes.fromhex("20")
+    WIF_BYTE = bytes.fromhex("A0")
+    GENESIS_HASH = ('dced3542896ed537cb06f9cb064319adb'
+                    '0da615f64dd8c5e5bad974398f44b24')
+    ESTIMATE_FEE = 0.00001
+    RELAY_FEE = 0.00001
+    TX_COUNT = 397748
+    TX_COUNT_HEIGHT = 1940271
+    TX_PER_BLOCK = 2
+    RPC_PORT = 8122
+    REORG_LIMIT = 2000
+    PEERS = [
+        'electrum1.netseed.net s t',
+        'electrum2.netseed.net s t',
+    ]
+
 
 class Feathercoin(Coin):
     NAME = "Feathercoin"
