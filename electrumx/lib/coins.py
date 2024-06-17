@@ -2198,6 +2198,7 @@ class Goldcoin(Coin):
     PEERS = [
         'electrum1.netseed.net s t',
         'electrum2.netseed.net s t',
+        'electrum.glcseed.net s t',
     ]
 
 
