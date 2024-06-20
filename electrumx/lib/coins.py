@@ -2195,11 +2195,6 @@ class Goldcoin(Coin):
     TX_PER_BLOCK = 2
     RPC_PORT = 8122
     REORG_LIMIT = 2000
-    PEERS = [
-        'electrum1.netseed.net s t',
-        'electrum2.netseed.net s t',
-        'electrum.glcseed.net s t',
-    ]
 
 
 class Feathercoin(Coin):
